@@ -17,6 +17,6 @@ let user = {
 // добавляем частично применённый метод с фиксированным временем
 user.sayNow = partial(user.say, new Date().getHours() + ':' + new Date().getMinutes());
 
-user.sayNow("Hello");
+
 // Что-то вроде этого:
 // [10:00] John: Hello!
