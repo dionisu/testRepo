@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="c1.css">
+</head>
+
+<body>
+
+    <img src="assets2\img\1.png" id="background">
+    <audio src="assets2\audio\Beyonce.mp3" id="song"></audio>
+    <div class="container">
+        <img src="assets2\img\1.png" id="thumbnail">
+        <div class="box">
+            <img src="assets2\svg\play.png" id="play-pause">
+            <img src="assets2\svg\forward.png" id="next-song">
+            <img src="assets2\svg\backward.png" id="previous-song">
+            <div class="song-artist">Beyonce</div>
+            <div class="song-title">Don't Hurt Yourself</div>
+            <input type="range" id="progress-bar" min="0" max="233.717551" value="0">
+            <div class="currentTime">0:00</div>
+            <div class="durationTime"></div>
+
+        </div>
+    </div>
+    <script src="player.js"></script>
+</body>
+
+</html>

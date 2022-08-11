@@ -1,0 +1,185 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+#background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: space-between;
+}
+
+.container {
+    position: absolute;
+    height: 300pt;
+    width: 250pt;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+}
+
+#thumbnail {
+    transform: scale(1);
+    position: absolute;
+    width: 103%;
+    top: -7%;
+    transition: 1s;
+    z-index: 3;
+}
+
+.box {
+    position: absolute;
+    height: 50%;
+    width: 103%;
+    background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
+    z-index: 4;
+    bottom: -17%;
+}
+
+#play-pause {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    filter: invert(1);
+    cursor: pointer;
+    bottom: 60%;
+    z-index: 4;
+    font-size: 53px;
+    left: 9%;
+    transition: .3s;
+}
+
+#next-song {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+    cursor: pointer;
+    bottom: 70%;
+    font-size: 40px;
+    z-index: 4;
+    transition: .3s;
+    right: 10%;
+}
+
+#previous-song {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+    cursor: pointer;
+    bottom: 50%;
+    font-size: 40px;
+    z-index: 4;
+    transition: .3s;
+    right: 10%;
+}
+
+.song-artist {
+    color: rgb(73, 214, 73);
+    margin-top: 30px;
+    margin-left: -60px;
+    z-index: 4;
+    color: rgb(193, 255, 6);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.song-title {
+    font-size: 20px;
+    color: white;
+    z-index: 4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+#progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    z-index: 4;
+    height: 5px;
+    background: #000000;
+    width: 160pt;
+    border-radius: 30px;
+    margin-left: 0px;
+    margin-top: 30px;
+}
+
+.currentTime {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: white;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 52px;
+}
+
+.durationTime {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    align-items: center;
+    color: rgb(193, 255, 6);
+    margin-top: -60px;
+    margin-left: 250px;
+}

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="tetris.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <div class="left-field">
+
+                <div class="play-field">
+                    <div class="first-line">
+                        <div class="square" id="sqsq12"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                    </div>
+                    <div class="second-line">
+                        <div class="square" id="sqsqsq"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq9"></div>
+                        <div class="square" id="sq10"></div>
+                        <div class="square" id="sq11"></div>
+                        <div class="square" id="sq12-2"></div>
+                    </div>
+                    <div class="third-line">
+                        <div class="square" id="sqsqsq"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq9-1"></div>
+                        <div class="square" id="sq10-1"></div>
+                        <div class="square" id="sq11-1"></div>
+                        <div class="square" id="sq12-3"></div>
+                    </div>
+                    <div class="fourth-line">
+                        <div class="square" id="sqsqsq"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq12-4"></div>
+                    </div>
+                    <div class="fifth-line">
+                        <div class="square" id="sqsqsq"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                    </div>
+                    <div class="sixth-line">
+                        <div class="square" id="sqsqsq"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq6-9"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq6-11"></div>
+                        <div class="square" id="sq1"></div>
+                    </div>
+                    <div class="seventh-line">
+                        <div class="square" id="sqsqsq"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq7-9"></div>
+                        <div class="square" id="sq7-10"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq7-11"></div>
+                        <div class="square" id="sq7-12"></div>
+                    </div>
+                    <div class="eighth-line">
+                        <div class="square" id="sqsqsq"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq8-10"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq8-12"></div>
+                    </div>
+                    <div class="nineth-line">
+                        <div class="square" id="sqsqsq"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                    </div>
+                    <div class="tenth-line">
+                        <div class="square" id="sqsqsq"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                    </div>
+                    <div class="eleventh-line">
+                        <div class="square" id="sqsqsq"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                    </div>
+                    <div class="twelfth-line">
+                        <div class="square" id="sqsqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                    </div>
+                </div>
+                <div class="circle">
+                    <div class="kvadrat"></div>
+                    <div class="kvadrat"></div>
+                    <div class="kvadrat"></div>
+                    <div class="kvadrat"></div>
+
+                </div>
+                <p class="title"> next</p>
+                <p class="points"> Points:</p>
+                <p class="number">30</p>
+                <img src="/assets2/photo_2022-08-09_23-08-31.jpg" class="img1">
+                <p class="player-name">Abraham</p>
+                <p class="score">200</p>
+            </div>
+            <div class="right-field">
+                <div class="circle" id="circle2">
+                    <div class="first">
+                        <div class="square" id="s"></div>
+                        <div class="square" id="s"></div>
+                    </div>
+                    <div class="first">
+                        <div class="square" id="s"></div>
+                        <div class="square" id="s"></div>
+                    </div>
+
+
+
+                </div>
+                <p class="title" id="title2"> next</p>
+                <p class="points" id="points2"> Points:</p>
+                <p class="number2" id="#number2">30</p>
+                <img src="/assets2/pic2.jpg" class="img1" id="img2">
+                <p class="player-name" id="player2">Joe</p>
+                <p class="score" id="score2"> 150</p>
+                <div class="play-field1">
+                    <div class="first-line">
+                        <div class="square" id="sqsq12"></div>
+
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                        <div class="square" id="sqsq"></div>
+                    </div>
+                    <div class="second-line">
+                        <div class="square" id="sqsqsq"></div>
+
+                        <div class="square" id=""></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq123"></div>
+                        <div class="square" id="sq123"></div>
+                    </div>
+                    <div class="third-line">
+                        <div class="square" id="sqsqsq"></div>
+
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id="sq123"></div>
+
+                    </div>
+                    <div class="fourth-line">
+                        <div class="square" id="sqsqsq"></div>
+
+                        <div class="square" id=""></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq123"></div>
+                        <div class="square" id="sq123"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq1234"></div>
+                        <div class="square" id="sq1234"></div>
+                        <div class="square" id="sq123"></div>
+                    </div>
+                    <div class="fifth-line">
+                        <div class="square" id="sqsqsq"></div>
+
+                        <div class="square" id=""></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq123"></div>
+                        <div class="square" id="sq123"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq1234"></div>
+                        <div class="square" id="sq1234"></div>
+                    </div>
+                    <div class="sixth-line">
+                        <div class="square" id="sqsqsq"></div>
+
+                        <div class="square" id=""></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq"></div>
+                        <div class="square" id="sq1"></div>
+                    </div>
+                    <div class="seventh-line">
+                        <div class="square" id="sqsqsq"></div>
+
+                        <div class="square" id=""></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq"></div>
+                        <div class="square" id="sq"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq"></div>
+                        <div class="square" id="sq"></div>
+                    </div>
+                    <div class="eighth-line">
+                        <div class="square" id="sqsqsq"></div>
+
+                        <div class="square" id=""></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq123"></div>
+                    </div>
+                    <div class="nineth-line">
+                        <div class="square" id="sqsqsq"></div>
+
+                        <div class="square" id=""></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq1"></div>
+                        <div class="square" id="sq2"></div>
+                        <div class="square" id="sq3"></div>
+                        <div class="square" id="sq4"></div>
+                        <div class="square" id="sq123"></div>
+                    </div>
+                    <div class="tenth-line">
+                        <div class="square" id="sqsqsq"></div>
+
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id="sq123"></div>
+
+                    </div>
+                    <div class="eleventh-line">
+                        <div class="square" id="sqsqsq"></div>
+
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id=""></div>
+                        <div class="square" id="sq123"></div>
+
+                    </div>
+                    <div class="twelfth-line">
+                        <div class="square" id="sqsqsq1"></div>
+
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+                        <div class="square" id="sqsq1"></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="wrap1"><button class="button"> 
+                <p class="textbut"> Surrender</p>
+            </button></div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

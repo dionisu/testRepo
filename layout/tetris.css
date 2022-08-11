@@ -1,0 +1,295 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #252B42;
+    font-weight: 500px;
+    ;
+}
+
+.wrapper {
+    margin: 0 auto;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 5vh;
+    background-color: black;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 20vh;
+}
+
+.left-field {
+    width: 50%;
+    background-color: black;
+    border-right: 5px solid white;
+}
+
+.right-field {
+    width: 50%;
+    background-color: black;
+}
+
+.play-field {
+    display: flex;
+    margin-left: 430px;
+    width: fit-content;
+    background-color: black;
+    height: 600px;
+}
+
+.play-field1 {
+    display: flex;
+    margin-left: 150px;
+    margin-top: -464px;
+}
+
+.square {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#sq12-2,
+#sq12-3,
+#sq12-4 {
+    background-color: #fff;
+}
+
+#sq9,
+#sq10,
+#sq11 {
+    background-color: #fff;
+}
+
+#sq9-1,
+#sq10-1,
+#sq11-1 {
+    background-color: #fff;
+}
+
+#sq6-11,
+#sq7-11,
+#sq7-12,
+#sq8-12 {
+    background-color: grey;
+    border: 2px solid grey;
+}
+
+#sq6-9,
+#sq7-9,
+#sq7-10,
+#sq8-10 {
+    background-color: #fff;
+}
+
+.circle {
+    margin-top: -590px;
+    margin-left: 810px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    margin-left: 830px;
+    font-size: 50px;
+    font-weight: 1000;
+    color: white
+}
+
+.kvadrat {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 2px solid white;
+    margin-left: 2px;
+    margin-top: 50px;
+}
+
+.points {
+    color: white;
+    font-size: 30px;
+    margin-left: 839px;
+    margin-top: 20px;
+}
+
+.number {
+    margin-top: 10px;
+    margin-left: 860px;
+    font-size: 30px;
+    color: white;
+}
+
+.img1 {
+    color: white;
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 840px;
+}
+
+.player-name {
+    color: white;
+    margin-left: 820px;
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.score {
+    color: white;
+    font-size: 30px;
+    margin-left: 850px;
+}
+
+#circle2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 9px;
+    margin-left: 5px;
+}
+
+#title2 {
+    margin-left: 25px;
+}
+
+#points2 {
+    margin-left: 25px;
+}
+
+#img2 {
+    margin-left: 25px;
+}
+
+.number2 {
+    margin-left: 45px;
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+}
+
+#player2 {
+    margin-left: 40px;
+}
+
+#score2 {
+    margin-left: 40px;
+}
+
+.first {
+    margin-top: 30px;
+}
+
+#s {
+    margin-left: 2px;
+    margin-bottom: 2px;
+    background-color: #fff;
+}
+
+#sq123 {
+    background-color: #fff;
+}
+
+#sq1234 {
+    background-color: grey;
+    border: 2px solid grey;
+}
+
+.button {
+    margin-top: 20px;
+    margin-left: 860px;
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.textbut {
+    color: black;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.wrap1 {
+    margin: 0 auto;
+}
+
+#sqsq {
+    border-left: none;
+}
+
+#sqsq12 {
+    border-top: none;
+    border-left: none;
+}
+
+#sqsq1 {
+    border-right: none;
+}
+
+#sqsqsq {
+    border-top: none;
+}
+
+#sqsqsq1 {
+    border-top: none;
+    border-right: none;
+}
+
+.img1 {
+    margin-top: 30px;
+}
