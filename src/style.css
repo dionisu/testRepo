@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #252B42;
+    font-weight: 500px;
+    ;
+}
+
+.App {
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 100vw;
+}
+
+.wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 375px;
+    height: 812px;
+    background: linear-gradient(180deg, rgba(229, 0, 0, 0.71) 9.02%, rgba(221, 6, 7, 0.720854) 11.25%, #1593AF 68.67%);
+}
+
+.Panel {
+    width: 312px;
+    height: 570px;
+    background: #222222;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.image1 {
+    width: 100px;
+    height: 100px;
+    margin-left: 93px;
+    margin-top: 56px;
+}

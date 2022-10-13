@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react';
-
+import Main from './Main';
 
 function App(){
-  return(<>
-    <h1>123</h1>
-  </>)
+  return(<Main></Main>)
 }
-
 export default App;
