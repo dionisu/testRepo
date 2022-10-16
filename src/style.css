@@ -56,7 +56,7 @@ body {
     justify-content: center;
     width: 375px;
     height: 812px;
-    background: linear-gradient(180deg, rgba(229, 0, 0, 0.71) 9.02%, rgba(221, 6, 7, 0.720854) 11.25%, #1593AF 68.67%);
+    background: linear-gradient(180deg, rgba(229, 0, 0, 0.71) 9.02%, rgba(221, 6, 7, 0.720854) 11.25%, #1593AF 68.67%)
 }
 
 .Panel {
@@ -72,4 +72,295 @@ body {
     height: 100px;
     margin-left: 93px;
     margin-top: 56px;
+}
+
+.p1 {
+    font-family: 'Red Hat Text';
+    width: 256px;
+    height: 100px;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    margin-left: 60px;
+    margin-top: 37px;
+    margin-left: 28px;
+}
+
+.p1-1 {
+    margin-top: 44px;
+    width: 245px;
+    height: 46px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #C1CC41;
+    margin-left: 34px;
+}
+
+.b1 {
+    width: 150px;
+    height: 60px;
+    background: #1AB8DB;
+    border-radius: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 71px;
+    margin-left: 81px;
+}
+
+.Panel2 {
+    width: 375px;
+    height: 812px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.addTask {
+    display: flex;
+    justify-content: space-between;
+    width: 375px;
+    height: 70px;
+}
+
+.pTask {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    color: #1AB8DB;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.krest {
+    margin-right: 15px;
+    margin-top: 25px;
+    font-size: 30px;
+    color: #1AB8DB;
+}
+
+.addTaskWrapper {
+    width: 345px;
+    height: 742px;
+    margin-left: 15px;
+}
+
+.image2 {
+    margin-left: 123px;
+}
+
+.Title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 9px;
+}
+
+.input1 {
+    width: 320px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid rgba(26, 184, 219, 0.85);
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: rgba(0, 0, 0, 0.8);
+    padding-left: 15px;
+    padding-top: 6px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 44px;
+}
+
+.button1 {
+    width: 106px;
+    height: 40px;
+    border: 1px solid #1AB8DB;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 92px;
+    background: #1AB8DB;
+    border-radius: 20px;
+    color: white;
+}
+
+.List {
+    width: 375px;
+    height: 812px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.blackBlock {
+    width: 375px;
+    height: 70px;
+    background-color: #222222;
+}
+
+.logo1 {
+    width: 100px;
+    height: 100px;
+    margin-left: 137px;
+    margin-top: 20px;
+}
+
+.headerList {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    border-bottom: 1px solid black;
+    margin-top: 41px;
+    margin-left: 15px;
+}
+
+.pList {
+    width: 72px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 16px;
+    margin-left: 11px;
+}
+
+.pView {
+    width: 73px;
+    height: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #1AB8DB;
+    margin-top: 16px;
+    margin-right: 10px;
+}
+
+.DateTask {
+    display: flex;
+    flex-direction: row;
+    width: 345px;
+    height: 45px;
+    border-radius: 4px;
+    background: #D9D9D9;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+.square {
+    margin-top: 13px;
+    margin-left: 9px;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.date {
+    width: 51px;
+    height: 19px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin-left: 28px;
+    margin-top: 13px;
+}
+
+.task {
+    width: 72px;
+    height: 19px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 64px;
+    margin-top: 13px;
+}
+
+.ToDo {
+    width: 345px;
+    height: 45px;
+    margin-left: 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: #EEEEEE;
+    display: flex;
+}
+
+.toDoSquare {
+    margin-top: 13px;
+    margin-left: 9px;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.toDoDate {
+    margin-top: 15px;
+    margin-left: 34px;
+    width: 87px;
+    height: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    color: rgba(34, 34, 34, 0.7);
+}
+
+.toDoTask {
+    width: 136px;
+    height: 19px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: rgba(0, 0, 0, 0.9);
+    margin-top: 16px;
+    margin-left: 23px;
 }
