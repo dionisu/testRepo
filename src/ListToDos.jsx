@@ -2,7 +2,7 @@ import  './style.css';
 import Logo from './images/Logo.svg'
 import { Outlet, Link } from "react-router-dom";
 import ToDo from './ToDo';
-export default function ListToDos(){
+export default function ListToDos({todo}){
     return(
         <div className="wrapper"><div className='List'>
         <div className="blackBlock">
@@ -19,7 +19,7 @@ export default function ListToDos(){
         <p className='date'>Date</p>
         <p className='task'>Task</p>
        </div>
-       <ToDo/>
+      <ToDo todo={todo}></ToDo>
         
     </div>
     </div>)

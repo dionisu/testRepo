@@ -1,6 +1,8 @@
 import  './style.css';
 
-export default function ToDo(){
+export default function ToDo({todo}){
+    console.log(todo)
+    
     return(<div className='ToDo'>
     <div className="toDoSquare">
 
@@ -8,8 +10,8 @@ export default function ToDo(){
     <p className="toDoDate">
         9 Sep 2022
     </p>
-        <p className="toDoTask">
-    Task to do
-        </p>
+        
+        {todo.map((item,index)=><p className="toDoTask" key={`${item}_${index}`}>{item}</p>)}
+        
     </div>)
 }
