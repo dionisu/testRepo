@@ -1,17 +1,12 @@
 import  './style.css';
 
-export default function ToDo({todo}){
-    console.log(todo)
-    
-    return(<div className='ToDo'>
-    <div className="toDoSquare">
+export function ToDo({description, date, finished}) {
 
-    </div>
-    <p className="toDoDate">
-        9 Sep 2022
-    </p>
-        
-        {todo.map((item,index)=><p className="toDoTask" key={`${item}_${index}`}>{item}</p>)}
-        
-    </div>)
+    return (
+        <div className="DateTask">
+            <div className="square" />
+            <p className='date'>{date}</p>
+            <p className='task'>{description}</p>
+        </div>
+        )
 }
